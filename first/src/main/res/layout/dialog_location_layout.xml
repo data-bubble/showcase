@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+  >
+
+
+
+<!--    <TextView-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        style="@style/h2"-->
+<!--        android:text="default"-->
+<!--        />-->
+    <ImageView
+        android:id="@+id/image_title_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/title_location"
+
+        android:minWidth="75dip"
+        android:minHeight="75dip" />
+    <RadioGroup
+        android:layout_below="@id/image_title_location"
+        android:id="@+id/radiogroup"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/all_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            style="@style/h2"
+            android:text="@string/h2_allObjects" />
+
+        <RadioButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/metro_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            style="@style/h2"
+            android:text="@string/h2_metro" />
+
+        <RadioButton
+
+            android:id="@+id/district_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/h2"
+            android:text="@string/h2_district" />
+    </RadioGroup>
+
+    <Spinner
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/radiogroup"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background_material_without_caret"
+        android:popupBackground="@drawable/my_spinner_popup_backround_material"
+        android:entries="@array/array_spinner"/>
+
+
+</RelativeLayout>

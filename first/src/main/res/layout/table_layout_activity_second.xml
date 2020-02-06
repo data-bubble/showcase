@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+
+
+
+    android:orientation="vertical"
+
+    >
+
+<LinearLayout
+    android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true">
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/simple_text"
+                android:textSize="@dimen/second_h2_size"
+                android:text="@string/complex"
+            />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/second_name_object_h2"
+                android:text="@string/title"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/h1_size"
+                style="@style/h2.second"
+                android:layout_gravity="center_horizontal"
+            />
+
+
+                </LinearLayout>
+
+<GridLayout
+    android:id="@+id/grid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:rowCount="2"
+    android:columnCount="10"
+    android:layout_below="@id/header"
+    android:padding="10dp"
+    android:layout_centerHorizontal="true"
+
+    >
+                <TextView
+
+                    android:text="Площадь"
+                    style="@style/h2.second"
+                    android:layout_margin="5dp"
+                    android:layout_columnSpan="4"
+                    android:layout_gravity="fill"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/grid_table_margin"
+
+
+
+
+                    />
+                <TextView
+
+                    android:layout_margin="5dp"
+                    android:text="Стоимость"
+                    style="@style/h2.second"
+                    android:layout_gravity="fill"
+                    android:gravity="center"
+                    android:layout_columnSpan="4"
+
+
+
+
+                    />
+                <TextView
+                    android:layout_margin="5dp"
+                    android:id="@+id/second_cc"
+                    android:text="@string/empty"
+                    style="@style/simple_text"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="fill"
+                    android:layout_columnSpan="4"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/grid_table_margin"
+
+
+
+
+                    />
+                <TextView
+                    android:layout_margin="5dp"
+                    android:id="@+id/second_price"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/empty"
+                    style="@style/simple_text"
+                   android:layout_gravity="fill"
+                    android:layout_columnSpan="4"
+                    android:gravity="center"
+                    />
+
+
+</GridLayout>
+
+
+<GridLayout
+    android:id="@+id/grid_about_project"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/grid"
+    android:columnCount="10"
+    android:padding="10dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            style="@style/h2.second.icons"
+            android:text="@string/icon_house"
+            android:textSize="24sp"
+            android:layout_marginRight="10dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h2.second"
+            android:textSize="@dimen/h1_size"
+            android:text="@string/about_project"
+            android:layout_columnSpan="9"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+        <TextView
+            style="@style/h2.second.icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/icon_around"
+            />
+
+         <TextView
+            android:id="@+id/second_min_year"
+            android:text="@string/first_row"
+            style="@style/simple_text"
+             android:layout_columnSpan="9"
+             android:layout_marginBottom="10dp"
+            />
+
+
+            <TextView
+            style="@style/h2.second.icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/icon_around"
+            />
+
+            <TextView
+            android:id="@+id/second_max_year"
+            android:text="@string/last_row"
+            style="@style/simple_text"
+                android:layout_columnSpan="9"
+                android:layout_marginBottom="10dp"
+            />
+             <TextView
+            style="@style/h2.second.icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/icon_around"
+            />
+
+            <TextView
+            android:id="@+id/second_developer"
+            android:text="@string/gk"
+            style="@style/simple_text"
+                android:layout_columnSpan="9"
+                android:layout_marginBottom="10dp"
+            />
+
+            <TextView
+                style="@style/h2.second.icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/icon_around"
+                />
+
+            <TextView
+                android:id="@+id/second_phone_developer"
+                android:text="@string/gk_phone"
+                style="@style/h2.second"
+                />
+
+
+</GridLayout>
+
+    <TextView
+        style="@style/simple_text"
+        android:id="@+id/description_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/grid_about_project"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_object"
+        android:columnCount="4"
+        android:rowCount="3"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill"
+            android:text="@string/vacation"
+            style="@style/h2.second"
+            android:layout_marginBottom="20dp"
+
+            />
+        <ImageView
+
+            android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_margin="4dp"
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+          android:src="@drawable/logo_metro"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"></ImageView>
+        <TextView
+            android:id="@+id/second_metro"
+            android:text="@string/metro"
+            style="@style/simple_text"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="@dimen/grid_table_margin"
+            />
+        <TextView
+            android:layout_marginRight="10dp"
+            style="@style/h2.second.icons"
+            android:text="@string/icon_road"
+            android:layout_rowSpan="2"
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:layout_gravity="fill"
+            />
+        <TextView
+            android:text="@string/mkad"
+            style="@style/simple_text"
+            />
+        <TextView
+            android:id="@+id/second_metro_time"
+            android:text="@string/dist_time"
+            style="@style/simple_text"
+            />
+        <TextView
+            android:id="@+id/second_mkad_time"
+            android:text="@string/dist_time"
+            style="@style/simple_text"
+            />
+
+
+
+</GridLayout>
+</RelativeLayout>

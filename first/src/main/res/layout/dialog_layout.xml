@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<!--    <TextView-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:id="@+id/textmin"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style="@style/h2"-->
+<!--        android:text="цена"-->
+<!--        />-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        >
+    <ImageView
+        android:id="@+id/imagege_title_filter"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dilaog_filter_title"
+
+        android:minWidth="50dip"
+        android:minHeight="50dip" />
+
+
+        <org.florescu.android.rangeseekbar.RangeSeekBar
+
+            android:id="@+id/seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:absoluteMaxValue="10.0"
+            app:absoluteMinValue="0.0"
+            app:activeColor="@color/colorAccent"
+            app:barHeight="3dp"
+            app:defaultColor="@color/textColor"
+            app:textAboveThumbsColor="@color/textColor"
+            app:thumbShadowColor="@color/colorPrimaryDark"
+            app:valuesAboveThumbs="true" />
+        <TextView
+            android:id="@+id/price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/h2_price"
+            style="@style/h2"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <!--        android:outlineAmbientShadowColor="@color/colorPrimaryDark"-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Применить"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_below="@id/seekbar"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        />-->
+
+
+
+    <org.florescu.android.rangeseekbar.RangeSeekBar
+        android:id="@+id/seekbar_metro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:absoluteMaxValue="30"
+        app:absoluteMinValue="0"
+        app:activeColor="@color/colorAccent"
+        app:barHeight="3dp"
+        app:defaultColor="@color/textColor"
+        app:singleThumb="true"
+        app:textAboveThumbsColor="@color/textColor"
+        app:thumbShadowColor="@color/colorPrimaryDark"
+        app:valuesAboveThumbs="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/metro_distation_title"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/h2_metro_distantion"
+            style="@style/h2"
+            />
+
+
+
+    <org.florescu.android.rangeseekbar.RangeSeekBar
+        android:id="@+id/cc_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:absoluteMaxValue="2030"
+        app:absoluteMinValue="2020"
+        app:activeColor="@color/colorAccent"
+        app:barHeight="3dp"
+        app:defaultColor="@color/textColor"
+        app:textAboveThumbsColor="@color/textColor"
+        app:thumbShadowColor="@color/colorPrimaryDark"
+        app:valuesAboveThumbs="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cc_title"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/seekbar_metro"
+            android:text="@string/h2_year"
+            style="@style/h2"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

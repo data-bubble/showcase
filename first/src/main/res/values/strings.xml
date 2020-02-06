@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">First</string>
+    <string name="filter">filter</string>
+    <string name="location">dialog_location</string>
+
+    <string-array name="array_spinner">spinner
+        <item>default</item>
+        <item>test</item>
+    </string-array>
+    <string name="h2_metro">метро</string>
+    <string name="h2_district">район</string>
+    <string name="h2_allObjects">все объекты</string>
+    <string name="filter_title">фильтр</string>
+    <string name="h2_price">цена(млн)</string>
+    <string name="h2_metro_distantion">метро(мин)</string>
+    <string name="h2_year">год сдачи</string>
+    <string name="h2_table_name_object_string">Навзание Жилищного Комплекса</string>
+    <string name="about_project">O проекте :</string>
+    <string name="vacation">Расположение</string>
+    <string name="mkad">Мкад</string>
+    <string name="empty">нет данных</string>
+    <string name="title">Название</string>
+    <string name="complex">Жилой комплекс</string>
+    <string name="first_row">1-я очередь</string>
+    <string name="last_row">Срок сдачи всего обьекта неизвестен</string>
+    <string name="gk">Застройщик неизвестен</string>
+    <string name="gk_phone">Телефон неизвестен</string>
+    <string name="metro">Метро</string>
+    <string name="dist_time">нет данных</string>
+
+
+    <string name="icon_comeback">\uf112</string>
+    <string name="icon_money">\uf0d6</string>
+    <string name="icon_metro">\uf239</string>
+    <string name="icon_clock">\uf017</string>
+    <string name="icon_house">\uf0f7</string>
+    <string name="icon_ruble">\uf158</string>
+    <string name="icon_start_glass">\uf251</string>
+    <string name="icon_end_glass">\uf253</string>
+    <string name="icon_road">\uf018</string>
+    <string name="icon_around">\uf111</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

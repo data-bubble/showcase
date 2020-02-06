@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingMode="stack"
+    android:paddingStart="0dp"
+    android:paddingEnd="0dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    <item
+
+        android:drawable="@drawable/my_spinner_popup_backround_material"/>
+    <item
+        android:gravity="end|fill_vertical"
+
+        android:drawable="@drawable/my_spinner_control_background" />
+
+
+</layer-list>
